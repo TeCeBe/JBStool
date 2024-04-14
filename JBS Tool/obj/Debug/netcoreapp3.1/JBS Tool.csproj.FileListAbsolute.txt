@@ -1,0 +1,60 @@
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.exe
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.deps.json
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.runtimeconfig.json
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.runtimeconfig.dev.json
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.dll
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.pdb
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csprojAssemblyReference.cache
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.Form1.resources
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csproj.GenerateResource.cache
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.AssemblyInfoInputs.cache
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.AssemblyInfo.cs
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csproj.CoreCompileInputs.cache
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.dll
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.pdb
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.genruntimeconfig.cache
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.downloadWindow.resources
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.about.resources
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.clientMode.resources
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.serverMode.resources
+C:\Users\artma\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.test.resources
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.exe
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.deps.json
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.runtimeconfig.json
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.runtimeconfig.dev.json
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.dll
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.pdb
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.about.resources
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.clientMode.resources
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.downloadWindow.resources
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.Form1.resources
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.serverMode.resources
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.test.resources
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csproj.GenerateResource.cache
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.AssemblyInfoInputs.cache
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.AssemblyInfo.cs
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csproj.CoreCompileInputs.cache
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.dll
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.pdb
+Z:\Pliki\Artur\kopia\kopia 2023\source\repos\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.genruntimeconfig.cache
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.exe
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.deps.json
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.runtimeconfig.json
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.runtimeconfig.dev.json
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.dll
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.pdb
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.about.resources
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.clientMode.resources
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.downloadWindow.resources
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.Form1.resources
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.serverMode.resources
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.test.resources
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csproj.GenerateResource.cache
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.dll
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.pdb
+C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.genruntimeconfig.cache

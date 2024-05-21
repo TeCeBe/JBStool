@@ -277,5 +277,10 @@ namespace JBS_Tool
         {
             serverModeObject.Show();
         }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            clientModeObject.Show();
+        }
     }
 }

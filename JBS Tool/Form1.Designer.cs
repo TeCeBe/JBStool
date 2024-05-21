@@ -419,6 +419,7 @@ namespace JBS_Tool
             linkLabel5.TabIndex = 7;
             linkLabel5.TabStop = true;
             linkLabel5.Text = "Klient";
+            linkLabel5.LinkClicked += linkLabel5_LinkClicked;
             // 
             // Form1
             // 

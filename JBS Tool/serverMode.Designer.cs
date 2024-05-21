@@ -52,6 +52,8 @@ namespace JBS_Tool
             button5 = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
+            button11 = new System.Windows.Forms.Button();
+            button12 = new System.Windows.Forms.Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -104,7 +106,6 @@ namespace JBS_Tool
             button1.TabIndex = 5;
             button1.Text = "Dodaj";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -271,11 +272,33 @@ namespace JBS_Tool
             button3.Text = "Wyślij komendę włączenia przeglądarki wraz z URL";
             button3.UseVisualStyleBackColor = true;
             // 
+            // button11
+            // 
+            button11.Location = new System.Drawing.Point(698, 5);
+            button11.Name = "button11";
+            button11.Size = new System.Drawing.Size(140, 23);
+            button11.TabIndex = 12;
+            button11.Text = "Uruchom serwer";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
+            // 
+            // button12
+            // 
+            button12.Location = new System.Drawing.Point(844, 5);
+            button12.Name = "button12";
+            button12.Size = new System.Drawing.Size(140, 23);
+            button12.TabIndex = 13;
+            button12.Text = "Zatrzymaj serwer";
+            button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
+            // 
             // serverMode
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(996, 543);
+            Controls.Add(button12);
+            Controls.Add(button11);
             Controls.Add(groupBox1);
             Controls.Add(label4);
             Controls.Add(richTextBox1);
@@ -321,5 +344,7 @@ namespace JBS_Tool
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }

@@ -58,3 +58,23 @@ C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csp
 C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.dll
 C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.pdb
 C:\Users\Lenovo\Documents\JBS Tool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.exe
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.deps.json
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.runtimeconfig.json
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.runtimeconfig.dev.json
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\netcoreapp3.1\JBS Tool.pdb
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.about.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.clientMode.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.downloadWindow.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.Form1.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.serverMode.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS_Tool.test.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.pdb
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\netcoreapp3.1\JBS Tool.genruntimeconfig.cache

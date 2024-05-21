@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Documents\\JBS Tool\\JBS Tool\\JBS Tool.csproj": {}
+    "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Documents\\JBS Tool\\JBS Tool\\JBS Tool.csproj": {
+    "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\JBS Tool\\JBS Tool\\JBS Tool.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
         "projectName": "JBS Tool",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\JBS Tool\\JBS Tool\\JBS Tool.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\JBS Tool\\JBS Tool\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\JBStool\\JBS Tool\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

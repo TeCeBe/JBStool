@@ -31,8 +31,8 @@ namespace JBS_Tool
         {
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
-            button1 = new System.Windows.Forms.Button();
-            label3 = new System.Windows.Forms.Label();
+            checkVersionButton = new System.Windows.Forms.Button();
+            versionOutput = new System.Windows.Forms.Label();
             linkLabel1 = new System.Windows.Forms.LinkLabel();
             SuspendLayout();
             // 
@@ -44,7 +44,7 @@ namespace JBS_Tool
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(482, 45);
             label1.TabIndex = 0;
-            label1.Text = "JBS Tool v0.1 beta";
+            label1.Text = "JBS Tool v1.0";
             label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
@@ -58,26 +58,26 @@ namespace JBS_Tool
             label2.Text = "Aplikacja tylko do użytku wewnętrznego JBS Komputery\r\n\r\nWszelkie prawa zastrzeżone";
             label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
+            // checkVersionButton
             // 
-            button1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            button1.Enabled = false;
-            button1.Location = new System.Drawing.Point(161, 126);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(185, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Sprawdź dostępność aktualizacji";
-            button1.UseVisualStyleBackColor = true;
+            checkVersionButton.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            checkVersionButton.Location = new System.Drawing.Point(161, 126);
+            checkVersionButton.Name = "checkVersionButton";
+            checkVersionButton.Size = new System.Drawing.Size(185, 23);
+            checkVersionButton.TabIndex = 2;
+            checkVersionButton.Text = "Sprawdź dostępność aktualizacji";
+            checkVersionButton.UseVisualStyleBackColor = true;
+            checkVersionButton.Click += checkVersionButton_Click;
             // 
-            // label3
+            // versionOutput
             // 
-            label3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            label3.Location = new System.Drawing.Point(12, 152);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(482, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Masz najnowszą wersję aplikacji";
-            label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            versionOutput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            versionOutput.Location = new System.Drawing.Point(12, 152);
+            versionOutput.Name = "versionOutput";
+            versionOutput.Size = new System.Drawing.Size(482, 15);
+            versionOutput.TabIndex = 3;
+            versionOutput.Text = "Masz najnowszą wersję aplikacji";
+            versionOutput.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // linkLabel1
             // 
@@ -90,6 +90,7 @@ namespace JBS_Tool
             linkLabel1.Text = "Pobierz aktualizację w przeglądarce";
             linkLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             linkLabel1.Visible = false;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // about
             // 
@@ -97,8 +98,8 @@ namespace JBS_Tool
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(506, 205);
             Controls.Add(linkLabel1);
-            Controls.Add(label3);
-            Controls.Add(button1);
+            Controls.Add(versionOutput);
+            Controls.Add(checkVersionButton);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -114,8 +115,8 @@ namespace JBS_Tool
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button checkVersionButton;
+        private System.Windows.Forms.Label versionOutput;
         private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

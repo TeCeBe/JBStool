@@ -17,10 +17,6 @@ namespace JBS_Tool
 {
     public partial class Form1 : Form
     {
-        downloadWindow downloadWindowObject = new downloadWindow();
-        about aboutObject = new about();
-        clientMode clientModeObject = new clientMode();
-        serverMode serverModeObject = new serverMode();
         private bool isSupported = false;
         private bool isWin11 = false;
 
@@ -175,6 +171,7 @@ namespace JBS_Tool
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            downloadWindow downloadWindowObject = new downloadWindow(); 
             downloadWindowObject.Show();
         }
 
@@ -256,6 +253,7 @@ namespace JBS_Tool
                 }
             }
             string niniteMainUrl = "https://www.ninite.com/" + niniteSubUrl + "/ninite.exe";
+            downloadWindow downloadWindowObject = new downloadWindow();
             downloadWindowObject.downloadFile(niniteMainUrl, autorunNinite.Checked);
             downloadWindowObject.Show();
         }
@@ -270,16 +268,19 @@ namespace JBS_Tool
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            about aboutObject = new about();
             aboutObject.Show();
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            serverMode serverModeObject = new serverMode();
             serverModeObject.Show();
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            clientMode clientModeObject = new clientMode();
             clientModeObject.Show();
         }
     }

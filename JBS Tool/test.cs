@@ -14,5 +14,16 @@ namespace JBS_Tool
         {
             InitializeComponent();
         }
+
+        private void test_Load(object sender, EventArgs e)
+        {
+            countdownTimer.Start();
+        }
+
+        private void countdownTimer_Tick(object sender, EventArgs e)
+        {
+            countdownTimer.Stop();
+            this.Close();
+        }
     }
 }

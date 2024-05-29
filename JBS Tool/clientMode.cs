@@ -30,7 +30,7 @@ namespace JBS_Tool
                     String message = Encoding.ASCII.GetString(data, 0, bytes);
                     MessageBox.Show("Otrzymano wiadomość: " + message, "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-              
+
             }
             catch (Exception exc)
             {
@@ -42,5 +42,15 @@ namespace JBS_Tool
         {
             serverWorker(ipBox.Text, 25064);
         }
+
+        /*
+         * w tym kodzie klient łączy się z serwerem i odbiera wiadomości
+         * nalezy dopisac funkcjonalnosc, ktora zinterpretuje otrzymana wiadomosc i wykona akcje wg
+         * informacji zawartych w servermode
+         * wazne: nie mozna zmieniac kodu servermode 
+         * wazne: przy teście połączenia musi pokazac sie okienko test, ktore potwierdzi poprawne polaczenie
+         * zawiera juz implementację autozamykania i nie trzeba przy nic robić nic więcej
+         * have fun :)
+         */
     }
 }

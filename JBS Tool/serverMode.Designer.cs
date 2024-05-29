@@ -30,31 +30,29 @@ namespace JBS_Tool
         private void InitializeComponent()
         {
             label1 = new System.Windows.Forms.Label();
-            textBox1 = new System.Windows.Forms.TextBox();
-            listBox1 = new System.Windows.Forms.ListBox();
-            label2 = new System.Windows.Forms.Label();
-            textBox2 = new System.Windows.Forms.TextBox();
-            button1 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
-            label3 = new System.Windows.Forms.Label();
-            textBox3 = new System.Windows.Forms.TextBox();
-            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            ipTextBox = new System.Windows.Forms.TextBox();
+            uriTextBox = new System.Windows.Forms.TextBox();
+            logTextBox = new System.Windows.Forms.RichTextBox();
             label4 = new System.Windows.Forms.Label();
-            groupBox1 = new System.Windows.Forms.GroupBox();
-            button10 = new System.Windows.Forms.Button();
-            checkBox2 = new System.Windows.Forms.CheckBox();
-            button9 = new System.Windows.Forms.Button();
-            linkLabel1 = new System.Windows.Forms.LinkLabel();
-            button8 = new System.Windows.Forms.Button();
-            button7 = new System.Windows.Forms.Button();
-            button6 = new System.Windows.Forms.Button();
+            actionBox = new System.Windows.Forms.GroupBox();
+            linkLabel2 = new System.Windows.Forms.LinkLabel();
+            dhcpButton = new System.Windows.Forms.Button();
+            staticNoGwButton = new System.Windows.Forms.Button();
+            staticButton = new System.Windows.Forms.Button();
             checkBox1 = new System.Windows.Forms.CheckBox();
-            button5 = new System.Windows.Forms.Button();
+            shutdownButton = new System.Windows.Forms.Button();
+            label2 = new System.Windows.Forms.Label();
+            commandTextBox = new System.Windows.Forms.TextBox();
+            button10 = new System.Windows.Forms.Button();
+            button9 = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
-            button11 = new System.Windows.Forms.Button();
-            button12 = new System.Windows.Forms.Button();
-            groupBox1.SuspendLayout();
+            linkLabel1 = new System.Windows.Forms.LinkLabel();
+            runServerButton = new System.Windows.Forms.Button();
+            stopServerButton = new System.Windows.Forms.Button();
+            linkLabel3 = new System.Windows.Forms.LinkLabel();
+            saveLogDialog = new System.Windows.Forms.SaveFileDialog();
+            actionBox.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -66,255 +64,254 @@ namespace JBS_Tool
             label1.TabIndex = 0;
             label1.Text = "Twój adres IP:";
             // 
-            // textBox1
+            // ipTextBox
             // 
-            textBox1.Location = new System.Drawing.Point(96, 6);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(256, 23);
-            textBox1.TabIndex = 1;
+            ipTextBox.Location = new System.Drawing.Point(96, 6);
+            ipTextBox.Name = "ipTextBox";
+            ipTextBox.ReadOnly = true;
+            ipTextBox.Size = new System.Drawing.Size(256, 23);
+            ipTextBox.TabIndex = 1;
             // 
-            // listBox1
+            // uriTextBox
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new System.Drawing.Point(12, 35);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new System.Drawing.Size(340, 424);
-            listBox1.TabIndex = 2;
+            uriTextBox.Location = new System.Drawing.Point(318, 138);
+            uriTextBox.Name = "uriTextBox";
+            uriTextBox.Size = new System.Drawing.Size(306, 23);
+            uriTextBox.TabIndex = 8;
             // 
-            // label2
+            // logTextBox
             // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(12, 462);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(54, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Dodaj IP:";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new System.Drawing.Point(12, 480);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(340, 23);
-            textBox2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            button1.Location = new System.Drawing.Point(12, 509);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(75, 23);
-            button1.TabIndex = 5;
-            button1.Text = "Dodaj";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new System.Drawing.Point(93, 509);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(113, 23);
-            button2.TabIndex = 6;
-            button2.Text = "Usuń zaznaczone";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(358, 14);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(30, 15);
-            label3.TabIndex = 7;
-            label3.Text = "Logi";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new System.Drawing.Point(358, 311);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new System.Drawing.Size(626, 23);
-            textBox3.TabIndex = 8;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.Location = new System.Drawing.Point(358, 35);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new System.Drawing.Size(626, 255);
-            richTextBox1.TabIndex = 9;
-            richTextBox1.Text = "";
+            logTextBox.Location = new System.Drawing.Point(18, 35);
+            logTextBox.Name = "logTextBox";
+            logTextBox.Size = new System.Drawing.Size(966, 299);
+            logTextBox.TabIndex = 9;
+            logTextBox.Text = "";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(358, 293);
+            label4.Location = new System.Drawing.Point(318, 113);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(28, 15);
             label4.TabIndex = 10;
             label4.Text = "URL";
             // 
-            // groupBox1
+            // actionBox
             // 
-            groupBox1.Controls.Add(button10);
-            groupBox1.Controls.Add(checkBox2);
-            groupBox1.Controls.Add(button9);
-            groupBox1.Controls.Add(linkLabel1);
-            groupBox1.Controls.Add(button8);
-            groupBox1.Controls.Add(button7);
-            groupBox1.Controls.Add(button6);
-            groupBox1.Controls.Add(checkBox1);
-            groupBox1.Controls.Add(button5);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Location = new System.Drawing.Point(358, 340);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(626, 191);
-            groupBox1.TabIndex = 11;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Akcje";
+            actionBox.Controls.Add(linkLabel2);
+            actionBox.Controls.Add(dhcpButton);
+            actionBox.Controls.Add(staticNoGwButton);
+            actionBox.Controls.Add(staticButton);
+            actionBox.Controls.Add(checkBox1);
+            actionBox.Controls.Add(shutdownButton);
+            actionBox.Controls.Add(label2);
+            actionBox.Controls.Add(commandTextBox);
+            actionBox.Controls.Add(button10);
+            actionBox.Controls.Add(button9);
+            actionBox.Controls.Add(label4);
+            actionBox.Controls.Add(uriTextBox);
+            actionBox.Controls.Add(button4);
+            actionBox.Controls.Add(button3);
+            actionBox.Enabled = false;
+            actionBox.Location = new System.Drawing.Point(12, 340);
+            actionBox.Name = "actionBox";
+            actionBox.Size = new System.Drawing.Size(972, 191);
+            actionBox.TabIndex = 11;
+            actionBox.TabStop = false;
+            actionBox.Text = "Akcje";
             // 
-            // button10
+            // linkLabel2
             // 
-            button10.Location = new System.Drawing.Point(6, 140);
-            button10.Name = "button10";
-            button10.Size = new System.Drawing.Size(306, 23);
-            button10.TabIndex = 10;
-            button10.Text = "Test komunikacji";
-            button10.UseVisualStyleBackColor = true;
-            button10.Click += button10_Click;
+            linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            linkLabel2.AutoSize = true;
+            linkLabel2.Location = new System.Drawing.Point(630, 164);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new System.Drawing.Size(206, 15);
+            linkLabel2.TabIndex = 18;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Pomoc dotycząca powyższych funkcji";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
-            // checkBox2
+            // dhcpButton
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new System.Drawing.Point(6, 25);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new System.Drawing.Size(210, 19);
-            checkBox2.TabIndex = 9;
-            checkBox2.Text = "Zastosuj do wybranego komputera";
-            checkBox2.UseVisualStyleBackColor = true;
+            dhcpButton.Enabled = false;
+            dhcpButton.Location = new System.Drawing.Point(630, 138);
+            dhcpButton.Name = "dhcpButton";
+            dhcpButton.Size = new System.Drawing.Size(302, 23);
+            dhcpButton.TabIndex = 17;
+            dhcpButton.Text = "Włącz DHCP";
+            dhcpButton.UseVisualStyleBackColor = true;
+            dhcpButton.Click += dhcpButton_Click;
             // 
-            // button9
+            // staticNoGwButton
             // 
-            button9.Location = new System.Drawing.Point(6, 109);
-            button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(306, 23);
-            button9.TabIndex = 8;
-            button9.Text = "Ping";
-            button9.UseVisualStyleBackColor = true;
+            staticNoGwButton.Enabled = false;
+            staticNoGwButton.Location = new System.Drawing.Point(630, 109);
+            staticNoGwButton.Name = "staticNoGwButton";
+            staticNoGwButton.Size = new System.Drawing.Size(302, 23);
+            staticNoGwButton.TabIndex = 16;
+            staticNoGwButton.Text = "Ustaw statyczny adres bez komunikacji";
+            staticNoGwButton.UseVisualStyleBackColor = true;
+            staticNoGwButton.Click += staticNoGwButton_Click;
             // 
-            // linkLabel1
+            // staticButton
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new System.Drawing.Point(318, 169);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new System.Drawing.Size(195, 15);
-            linkLabel1.TabIndex = 7;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Informacje o powyższych funkcjach";
-            // 
-            // button8
-            // 
-            button8.Location = new System.Drawing.Point(318, 138);
-            button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(302, 23);
-            button8.TabIndex = 6;
-            button8.Text = "Włącz DHCP";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new System.Drawing.Point(318, 109);
-            button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(302, 23);
-            button7.TabIndex = 5;
-            button7.Text = "Ustaw statyczny adres bez komunikacji";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Location = new System.Drawing.Point(318, 80);
-            button6.Name = "button6";
-            button6.Size = new System.Drawing.Size(302, 23);
-            button6.TabIndex = 4;
-            button6.Text = "Wyłącz DHCP i ustaw statyczny adres";
-            button6.UseVisualStyleBackColor = true;
+            staticButton.Enabled = false;
+            staticButton.Location = new System.Drawing.Point(630, 80);
+            staticButton.Name = "staticButton";
+            staticButton.Size = new System.Drawing.Size(302, 23);
+            staticButton.TabIndex = 15;
+            staticButton.Text = "Wyłącz DHCP i ustaw statyczny adres";
+            staticButton.UseVisualStyleBackColor = true;
+            staticButton.Click += staticButton_Click;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new System.Drawing.Point(318, 25);
+            checkBox1.Location = new System.Drawing.Point(630, 25);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new System.Drawing.Size(148, 19);
-            checkBox1.TabIndex = 3;
+            checkBox1.TabIndex = 14;
             checkBox1.Text = "Odblokuj opcje poniżej";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged_1;
             // 
-            // button5
+            // shutdownButton
             // 
-            button5.Location = new System.Drawing.Point(318, 51);
-            button5.Name = "button5";
-            button5.Size = new System.Drawing.Size(302, 23);
-            button5.TabIndex = 2;
-            button5.Text = "Wyślij komendę wyłączenia komputera";
-            button5.UseVisualStyleBackColor = true;
+            shutdownButton.Enabled = false;
+            shutdownButton.Location = new System.Drawing.Point(630, 51);
+            shutdownButton.Name = "shutdownButton";
+            shutdownButton.Size = new System.Drawing.Size(302, 23);
+            shutdownButton.TabIndex = 13;
+            shutdownButton.Text = "Wyślij komendę wyłączenia komputera";
+            shutdownButton.UseVisualStyleBackColor = true;
+            shutdownButton.Click += shutdownButton_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(6, 113);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(58, 15);
+            label2.TabIndex = 12;
+            label2.Text = "Polecenie";
+            // 
+            // commandTextBox
+            // 
+            commandTextBox.Location = new System.Drawing.Point(6, 138);
+            commandTextBox.Name = "commandTextBox";
+            commandTextBox.Size = new System.Drawing.Size(306, 23);
+            commandTextBox.TabIndex = 11;
+            // 
+            // button10
+            // 
+            button10.Location = new System.Drawing.Point(6, 82);
+            button10.Name = "button10";
+            button10.Size = new System.Drawing.Size(306, 23);
+            button10.TabIndex = 10;
+            button10.Text = "Wyślij polecenie (cmd)";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
+            // 
+            // button9
+            // 
+            button9.Location = new System.Drawing.Point(6, 51);
+            button9.Name = "button9";
+            button9.Size = new System.Drawing.Size(306, 23);
+            button9.TabIndex = 8;
+            button9.Text = "Test komunikacji";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button4
             // 
-            button4.Location = new System.Drawing.Point(6, 80);
+            button4.Location = new System.Drawing.Point(318, 80);
             button4.Name = "button4";
             button4.Size = new System.Drawing.Size(306, 23);
             button4.TabIndex = 1;
             button4.Text = "Wyślij komendę wyłączenia przeglądarki";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
-            button3.Location = new System.Drawing.Point(6, 51);
+            button3.Location = new System.Drawing.Point(318, 51);
             button3.Name = "button3";
             button3.Size = new System.Drawing.Size(306, 23);
             button3.TabIndex = 0;
             button3.Text = "Wyślij komendę włączenia przeglądarki wraz z URL";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
-            // button11
+            // linkLabel1
             // 
-            button11.Location = new System.Drawing.Point(698, 5);
-            button11.Name = "button11";
-            button11.Size = new System.Drawing.Size(140, 23);
-            button11.TabIndex = 12;
-            button11.Text = "Uruchom serwer";
-            button11.UseVisualStyleBackColor = true;
-            button11.Click += button11_Click;
+            linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new System.Drawing.Point(647, 9);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new System.Drawing.Size(45, 15);
+            linkLabel1.TabIndex = 7;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Pomoc";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // button12
+            // runServerButton
             // 
-            button12.Location = new System.Drawing.Point(844, 5);
-            button12.Name = "button12";
-            button12.Size = new System.Drawing.Size(140, 23);
-            button12.TabIndex = 13;
-            button12.Text = "Zatrzymaj serwer";
-            button12.UseVisualStyleBackColor = true;
-            button12.Click += button12_Click;
+            runServerButton.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            runServerButton.Location = new System.Drawing.Point(698, 5);
+            runServerButton.Name = "runServerButton";
+            runServerButton.Size = new System.Drawing.Size(140, 23);
+            runServerButton.TabIndex = 12;
+            runServerButton.Text = "Uruchom serwer";
+            runServerButton.UseVisualStyleBackColor = true;
+            runServerButton.Click += button11_Click;
+            // 
+            // stopServerButton
+            // 
+            stopServerButton.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            stopServerButton.Location = new System.Drawing.Point(844, 5);
+            stopServerButton.Name = "stopServerButton";
+            stopServerButton.Size = new System.Drawing.Size(140, 23);
+            stopServerButton.TabIndex = 13;
+            stopServerButton.Text = "Zatrzymaj serwer";
+            stopServerButton.UseVisualStyleBackColor = true;
+            stopServerButton.Click += button12_Click;
+            // 
+            // linkLabel3
+            // 
+            linkLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            linkLabel3.AutoSize = true;
+            linkLabel3.Location = new System.Drawing.Point(532, 9);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new System.Drawing.Size(109, 15);
+            linkLabel3.TabIndex = 14;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "Zapisz logi do pliku";
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            // 
+            // saveLogDialog
+            // 
+            saveLogDialog.Filter = "pliki txt|*.txt";
+            saveLogDialog.Title = "Zapisz log";
             // 
             // serverMode
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(996, 543);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(groupBox1);
-            Controls.Add(label4);
-            Controls.Add(richTextBox1);
-            Controls.Add(textBox3);
-            Controls.Add(label3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(label2);
-            Controls.Add(listBox1);
-            Controls.Add(textBox1);
+            Controls.Add(linkLabel3);
+            Controls.Add(stopServerButton);
+            Controls.Add(runServerButton);
+            Controls.Add(actionBox);
+            Controls.Add(logTextBox);
+            Controls.Add(linkLabel1);
+            Controls.Add(ipTextBox);
             Controls.Add(label1);
             Name = "serverMode";
-            Text = "serverMode";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            Text = "Tryb serwera";
+            Load += serverMode_Load;
+            actionBox.ResumeLayout(false);
+            actionBox.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -322,29 +319,27 @@ namespace JBS_Tool
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox ipTextBox;
+        private System.Windows.Forms.TextBox uriTextBox;
+        private System.Windows.Forms.RichTextBox logTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox actionBox;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button runServerButton;
+        private System.Windows.Forms.Button stopServerButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox commandTextBox;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Button dhcpButton;
+        private System.Windows.Forms.Button staticNoGwButton;
+        private System.Windows.Forms.Button staticButton;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button shutdownButton;
+        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.SaveFileDialog saveLogDialog;
     }
 }

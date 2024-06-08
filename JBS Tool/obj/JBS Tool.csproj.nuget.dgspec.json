@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {}
+    "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {
+    "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+        "projectUniqueName": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
         "projectName": "JBS Tool",
-        "projectPath": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+        "projectPath": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
         "packagesPath": "C:\\Users\\irekp\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\obj\\",
         "projectStyle": "PackageReference",
@@ -18,15 +18,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows7.0",
             "projectReferences": {}
           }
         },
@@ -42,8 +42,14 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows7.0",
+          "dependencies": {
+            "System.Management": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,6 +61,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

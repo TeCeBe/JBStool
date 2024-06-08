@@ -3,36 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\irekp\\source\\repos\\JBStool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\jbs tool.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\jbs tool.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,19 +82,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "serverMode.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs",
-              "RelativeDocumentMoniker": "JBS Tool\\serverMode.cs",
-              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs [Design]",
-              "RelativeToolTip": "JBS Tool\\serverMode.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "JBS Tool\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\Form1.Designer.cs",
+              "RelativeToolTip": "JBS Tool\\Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T14:29:44.74Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-08T15:12:01.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\Form1.resx",
+              "RelativeDocumentMoniker": "JBS Tool\\Form1.resx",
+              "ToolTip": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\Form1.resx",
+              "RelativeToolTip": "JBS Tool\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-06-08T15:11:59.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "clientMode.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
+              "RelativeDocumentMoniker": "JBS Tool\\clientMode.cs",
+              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs [Projekt]",
+              "RelativeToolTip": "JBS Tool\\clientMode.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:47:26.996Z",
+              "EditorCaption": " [Projekt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "serverMode.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs",
+              "RelativeDocumentMoniker": "JBS Tool\\serverMode.cs",
+              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs [Projekt]",
+              "RelativeToolTip": "JBS Tool\\serverMode.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:29:44.74Z",
+              "EditorCaption": " [Projekt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "test.cs",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\test.cs",
               "RelativeDocumentMoniker": "JBS Tool\\test.cs",
@@ -95,115 +144,123 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "test.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\test.cs",
               "RelativeDocumentMoniker": "JBS Tool\\test.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\test.cs [Projekt]",
-              "RelativeToolTip": "..\\..\\..\\..\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\test.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-08T14:29:45.309Z"
+              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\test.cs [Projekt]",
+              "RelativeToolTip": "JBS Tool\\test.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:29:45.309Z",
+              "EditorCaption": " [Projekt]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "serverMode.cs",
-              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs",
-              "RelativeDocumentMoniker": "JBS Tool\\serverMode.cs",
-              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs",
-              "RelativeToolTip": "JBS Tool\\serverMode.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T14:29:45.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "clientMode.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
-              "RelativeDocumentMoniker": "JBS Tool\\clientMode.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs [Projekt]",
-              "RelativeToolTip": "..\\..\\..\\..\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-08T14:29:45.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "clientMode.cs",
-              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
-              "RelativeDocumentMoniker": "JBS Tool\\clientMode.cs",
-              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
-              "RelativeToolTip": "JBS Tool\\clientMode.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T14:29:45.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Form1.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\Form1.cs",
               "RelativeDocumentMoniker": "JBS Tool\\Form1.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\Form1.cs [Projekt]",
-              "RelativeToolTip": "..\\..\\..\\..\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\Form1.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-08T14:29:45.318Z"
+              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\Form1.cs [Projekt]",
+              "RelativeToolTip": "JBS Tool\\Form1.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:29:45.318Z",
+              "EditorCaption": " [Projekt]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\Form1.cs",
               "RelativeDocumentMoniker": "JBS Tool\\Form1.cs",
               "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\Form1.cs",
               "RelativeToolTip": "JBS Tool\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAK0AAABIAAAA",
+              "ViewState": "AQIAADwBAAAAAAAAAAAiwFQBAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T14:29:45.322Z"
+              "WhenOpened": "2024-06-08T14:29:45.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "about.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\about.cs",
-              "RelativeDocumentMoniker": "JBS Tool\\about.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\about.cs [Projekt]",
-              "RelativeToolTip": "..\\..\\..\\..\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\about.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-08T14:29:45.325Z"
+              "Title": "serverMode.cs",
+              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs",
+              "RelativeDocumentMoniker": "JBS Tool\\serverMode.cs",
+              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs",
+              "RelativeToolTip": "JBS Tool\\serverMode.cs",
+              "ViewState": "AQIAALsAAAAAAAAAAAAiwM4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:51:40.378Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "JBS Tool",
+              "DocumentMoniker": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+              "RelativeDocumentMoniker": "JBS Tool\\JBS Tool.csproj",
+              "ToolTip": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+              "RelativeToolTip": "JBS Tool\\JBS Tool.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-08T15:10:38.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "clientMode.cs",
+              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
+              "RelativeDocumentMoniker": "JBS Tool\\clientMode.cs",
+              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
+              "RelativeToolTip": "JBS Tool\\clientMode.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:29:45.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "about.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\about.cs",
+              "RelativeDocumentMoniker": "JBS Tool\\about.cs",
+              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\about.cs [Projekt]",
+              "RelativeToolTip": "JBS Tool\\about.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:29:45.325Z",
+              "EditorCaption": " [Projekt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "about.cs",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\about.cs",
               "RelativeDocumentMoniker": "JBS Tool\\about.cs",
               "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\about.cs",
               "RelativeToolTip": "JBS Tool\\about.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAADgvyYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T14:29:45.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "downloadWindow.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\downloadWindow.cs",
               "RelativeDocumentMoniker": "JBS Tool\\downloadWindow.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\downloadWindow.cs [Projekt]",
-              "RelativeToolTip": "..\\..\\..\\..\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\downloadWindow.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-08T14:29:45.329Z"
+              "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\downloadWindow.cs [Projekt]",
+              "RelativeToolTip": "JBS Tool\\downloadWindow.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:29:45.329Z",
+              "EditorCaption": " [Projekt]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "downloadWindow.cs",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\downloadWindow.cs",
               "RelativeDocumentMoniker": "JBS Tool\\downloadWindow.cs",
               "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\downloadWindow.cs",
               "RelativeToolTip": "JBS Tool\\downloadWindow.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAowGQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T14:29:45.332Z"
             }

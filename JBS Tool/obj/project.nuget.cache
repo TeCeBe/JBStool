@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ezWfUbINzaw2YQhpLDsK5S7JmCPA/m+Jqda8fQ2sPn5dreBY+C40wM8P3nZVqK+ZTgT4RH3s2wTBbQple4XQ2g==",
+  "dgSpecHash": "lM5/rfLEh39ID15e/460U0RBPMgpZuUy1oh/k/9xz4GTORBiVBwrfEbiVgNPwQjvVljcQayC2WkTxgMUzXqVIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\irekp\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\irekp\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
+    "C:\\Users\\irekp\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\irekp\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\irekp\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\irekp\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
+  ],
   "logs": []
 }

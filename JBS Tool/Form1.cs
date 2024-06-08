@@ -7,10 +7,11 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Management;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 
 
 namespace JBS_Tool
@@ -44,6 +45,7 @@ namespace JBS_Tool
             {
                 supportInfo.Hide();
             }
+            loadInterfaces();
         }
 
         string getOSInfo()
@@ -171,7 +173,7 @@ namespace JBS_Tool
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            downloadWindow downloadWindowObject = new downloadWindow(); 
+            downloadWindow downloadWindowObject = new downloadWindow();
             downloadWindowObject.Show();
         }
 
@@ -282,6 +284,68 @@ namespace JBS_Tool
         {
             clientMode clientModeObject = new clientMode();
             clientModeObject.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadInterfaces()
+        {
+            lbInterfaces.Items.Clear();
+            var interfaces = NetworkInterface.GetAllNetworkInterfaces();
+            foreach (var ni in interfaces)
+            {
+                lbInterfaces.Items.Add(ni.Name);
+            }
+        }
+
+        private void lbInterfaces_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lbInterfaces.SelectedItem != null)
+            {
+                string interfaceName = lbInterfaces.SelectedItem.ToString();
+                ShowIPv4Settings(interfaceName);
+            }
+        }
+
+
+        private void ShowIPv4Settings(string interfaceName)
+        {
+            var networkInterface = NetworkInterface.GetAllNetworkInterfaces()
+                                                   .FirstOrDefault(ni => ni.Name == interfaceName);
+
+            if (networkInterface != null)
+            {
+                var ipProps = networkInterface.GetIPProperties().UnicastAddresses
+                                               .FirstOrDefault(ip => ip.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork);
+
+                if (ipProps != null)
+                {
+                    txtIpAddress.Text = ipProps.Address.ToString();
+                    txtSubnetMask.Text = ipProps.IPv4Mask.ToString();
+
+                    var gateway = networkInterface.GetIPProperties().GatewayAddresses
+                                                  .FirstOrDefault()?.Address.ToString();
+                    txtGateway.Text = gateway;
+
+                    var dnsAddresses = networkInterface.GetIPProperties().DnsAddresses
+                                                       .Where(dns => dns.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                                                       .Select(dns => dns.ToString()).ToArray();
+                    txtDns.Text = string.Join(", ", dnsAddresses);
+                }
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

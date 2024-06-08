@@ -47,18 +47,16 @@ namespace JBS_Tool
             button6 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
             checkBox2 = new System.Windows.Forms.CheckBox();
-            textBox5 = new System.Windows.Forms.TextBox();
-            label6 = new System.Windows.Forms.Label();
-            textBox4 = new System.Windows.Forms.TextBox();
+            txtDns = new System.Windows.Forms.TextBox();
             label5 = new System.Windows.Forms.Label();
-            textBox3 = new System.Windows.Forms.TextBox();
+            txtGateway = new System.Windows.Forms.TextBox();
             label4 = new System.Windows.Forms.Label();
-            textBox2 = new System.Windows.Forms.TextBox();
+            txtSubnetMask = new System.Windows.Forms.TextBox();
             label3 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
-            textBox1 = new System.Windows.Forms.TextBox();
+            txtIpAddress = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
-            listBox1 = new System.Windows.Forms.ListBox();
+            lbInterfaces = new System.Windows.Forms.ListBox();
             linkLabel1 = new System.Windows.Forms.LinkLabel();
             linkLabel3 = new System.Windows.Forms.LinkLabel();
             linkLabel4 = new System.Windows.Forms.LinkLabel();
@@ -221,18 +219,16 @@ namespace JBS_Tool
             tabPage2.Controls.Add(button6);
             tabPage2.Controls.Add(button5);
             tabPage2.Controls.Add(checkBox2);
-            tabPage2.Controls.Add(textBox5);
-            tabPage2.Controls.Add(label6);
-            tabPage2.Controls.Add(textBox4);
+            tabPage2.Controls.Add(txtDns);
             tabPage2.Controls.Add(label5);
-            tabPage2.Controls.Add(textBox3);
+            tabPage2.Controls.Add(txtGateway);
             tabPage2.Controls.Add(label4);
-            tabPage2.Controls.Add(textBox2);
+            tabPage2.Controls.Add(txtSubnetMask);
             tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(label2);
-            tabPage2.Controls.Add(textBox1);
+            tabPage2.Controls.Add(txtIpAddress);
             tabPage2.Controls.Add(label1);
-            tabPage2.Controls.Add(listBox1);
+            tabPage2.Controls.Add(lbInterfaces);
             tabPage2.Location = new System.Drawing.Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -249,6 +245,7 @@ namespace JBS_Tool
             button7.TabIndex = 15;
             button7.Text = "Zapisz";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
@@ -278,44 +275,28 @@ namespace JBS_Tool
             checkBox2.Text = "DHCP";
             checkBox2.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtDns
             // 
-            textBox5.Location = new System.Drawing.Point(273, 297);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new System.Drawing.Size(312, 23);
-            textBox5.TabIndex = 11;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(273, 279);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(39, 15);
-            label6.TabIndex = 10;
-            label6.Text = "DNS 2";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new System.Drawing.Point(273, 253);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new System.Drawing.Size(312, 23);
-            textBox4.TabIndex = 9;
+            txtDns.Location = new System.Drawing.Point(273, 253);
+            txtDns.Name = "txtDns";
+            txtDns.Size = new System.Drawing.Size(312, 23);
+            txtDns.TabIndex = 9;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new System.Drawing.Point(273, 235);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(39, 15);
+            label5.Size = new System.Drawing.Size(30, 15);
             label5.TabIndex = 8;
-            label5.Text = "DNS 1";
+            label5.Text = "DNS";
             // 
-            // textBox3
+            // txtGateway
             // 
-            textBox3.Location = new System.Drawing.Point(273, 179);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new System.Drawing.Size(312, 23);
-            textBox3.TabIndex = 7;
+            txtGateway.Location = new System.Drawing.Point(273, 179);
+            txtGateway.Name = "txtGateway";
+            txtGateway.Size = new System.Drawing.Size(312, 23);
+            txtGateway.TabIndex = 7;
             // 
             // label4
             // 
@@ -326,12 +307,13 @@ namespace JBS_Tool
             label4.TabIndex = 6;
             label4.Text = "Brama";
             // 
-            // textBox2
+            // txtSubnetMask
             // 
-            textBox2.Location = new System.Drawing.Point(273, 135);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(312, 23);
-            textBox2.TabIndex = 5;
+            txtSubnetMask.Location = new System.Drawing.Point(273, 135);
+            txtSubnetMask.Name = "txtSubnetMask";
+            txtSubnetMask.Size = new System.Drawing.Size(312, 23);
+            txtSubnetMask.TabIndex = 5;
+            txtSubnetMask.TextChanged += textBox2_TextChanged;
             // 
             // label3
             // 
@@ -351,12 +333,13 @@ namespace JBS_Tool
             label2.TabIndex = 3;
             label2.Text = "IPv4";
             // 
-            // textBox1
+            // txtIpAddress
             // 
-            textBox1.Location = new System.Drawing.Point(273, 91);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(312, 23);
-            textBox1.TabIndex = 2;
+            txtIpAddress.Location = new System.Drawing.Point(273, 91);
+            txtIpAddress.Name = "txtIpAddress";
+            txtIpAddress.Size = new System.Drawing.Size(312, 23);
+            txtIpAddress.TabIndex = 2;
+            txtIpAddress.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -367,14 +350,15 @@ namespace JBS_Tool
             label1.TabIndex = 1;
             label1.Text = "Nazwa interfejsu sieciowego";
             // 
-            // listBox1
+            // lbInterfaces
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new System.Drawing.Point(3, 3);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new System.Drawing.Size(264, 379);
-            listBox1.TabIndex = 0;
+            lbInterfaces.FormattingEnabled = true;
+            lbInterfaces.ItemHeight = 15;
+            lbInterfaces.Location = new System.Drawing.Point(3, 3);
+            lbInterfaces.Name = "lbInterfaces";
+            lbInterfaces.Size = new System.Drawing.Size(264, 379);
+            lbInterfaces.TabIndex = 0;
+            lbInterfaces.SelectedIndexChanged += lbInterfaces_SelectedIndexChanged;
             // 
             // linkLabel1
             // 
@@ -455,7 +439,7 @@ namespace JBS_Tool
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox niniteGroupbox;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbInterfaces;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckedListBox niniteMainList;
         private System.Windows.Forms.LinkLabel linkLabel1;
@@ -471,16 +455,14 @@ namespace JBS_Tool
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDns;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtGateway;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSubnetMask;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIpAddress;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.LinkLabel linkLabel5;

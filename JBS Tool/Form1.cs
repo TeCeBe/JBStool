@@ -37,7 +37,7 @@ namespace JBS_Tool
             }
             catch (Exception exc)
             {
-                MessageBox.Show("Nie można utworzyć folderu roboczego aplikacji. Funkcje takie jak pobieranie mogą nie działać prawidłowo. Spróbuj ponownie uruchamiając program z uprawnieniami administratora. Szczegóły: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show("Nie można utworzyć folderu roboczego aplikacji. Funkcje takie jak pobieranie mogą nie działać prawidłowo. Spróbuj ponownie uruchamiając program z uprawnieniami administratora. Szczegóły: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally { }
             winInfo.Text = "Twoja wersja systemu Windows: " + getOSInfo();
@@ -185,7 +185,7 @@ namespace JBS_Tool
             }
             catch (Exception exc)
             {
-                MessageBox.Show("Wystąpił nieznany błąd: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show("Wystąpił nieznany błąd: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
 
@@ -199,7 +199,7 @@ namespace JBS_Tool
             }
             catch (Exception exc)
             {
-                MessageBox.Show("Wystąpił nieznany błąd: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show("Wystąpił nieznany błąd: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
         }
@@ -212,7 +212,7 @@ namespace JBS_Tool
             }
             catch (Exception exc)
             {
-                MessageBox.Show("Wystąpił nieznany błąd: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show("Wystąpił nieznany błąd: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -340,10 +340,104 @@ namespace JBS_Tool
                                                        .Select(dns => dns.ToString()).ToArray();
                     txtDns.Text = string.Join(", ", dnsAddresses);
                 }
+
+                // Check DHCP status
+                chkDhcp.Checked = networkInterface.GetIPProperties().GetIPv4Properties().IsDhcpEnabled;
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void btnSaveSettings_Click(object sender, EventArgs e)
+        {
+            if (lbInterfaces.SelectedItem != null)
+            {
+                string interfaceName = lbInterfaces.SelectedItem.ToString();
+                UpdateIPv4Settings(interfaceName, chkDhcp.Checked, txtIpAddress.Text, txtSubnetMask.Text, txtGateway.Text, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
+            }
+        }
+
+        private void btnDisableDhcp_Click(object sender, EventArgs e)
+        {
+            if (lbInterfaces.SelectedItem != null)
+            {
+                string interfaceName = lbInterfaces.SelectedItem.ToString();
+                SaveCurrentIPv4Settings(interfaceName);
+                UpdateIPv4Settings(interfaceName, false, txtIpAddress.Text, txtSubnetMask.Text, txtGateway.Text, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
+            }
+        }
+
+        private void btnDisableDhcpAndRemoveGateway_Click(object sender, EventArgs e)
+        {
+            if (lbInterfaces.SelectedItem != null)
+            {
+                string interfaceName = lbInterfaces.SelectedItem.ToString();
+                SaveCurrentIPv4Settings(interfaceName);
+                UpdateIPv4Settings(interfaceName, false, txtIpAddress.Text, txtSubnetMask.Text, string.Empty, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
+            }
+        }
+
+        private void SaveCurrentIPv4Settings(string interfaceName)
+        {
+            var networkInterface = NetworkInterface.GetAllNetworkInterfaces()
+                                                   .FirstOrDefault(ni => ni.Name == interfaceName);
+
+            if (networkInterface != null)
+            {
+                var ipProps = networkInterface.GetIPProperties().UnicastAddresses
+                                               .FirstOrDefault(ip => ip.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork);
+
+                if (ipProps != null)
+                {
+                    txtIpAddress.Text = ipProps.Address.ToString();
+                    txtSubnetMask.Text = ipProps.IPv4Mask.ToString();
+
+                    var gateway = networkInterface.GetIPProperties().GatewayAddresses
+                                                  .FirstOrDefault()?.Address.ToString();
+                    txtGateway.Text = gateway;
+
+                    var dnsAddresses = networkInterface.GetIPProperties().DnsAddresses
+                                                       .Where(dns => dns.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                                                       .Select(dns => dns.ToString()).ToArray();
+                    txtDns.Text = string.Join(", ", dnsAddresses);
+                }
+            }
+        }
+
+        private void UpdateIPv4Settings(string interfaceName, bool useDhcp, string newIp, string newSubnet, string newGateway, string[] newDns)
+        {
+            if (useDhcp)
+            {
+                ExecuteNetshCommand($"interface ip set address \"{interfaceName}\" dhcp");
+                ExecuteNetshCommand($"interface ip set dns name=\"{interfaceName}\" dhcp");
+            }
+            else
+            {
+                ExecuteNetshCommand($"interface ip set address \"{interfaceName}\" static {newIp} {newSubnet} {newGateway}");
+                ExecuteNetshCommand($"interface ip set dns name=\"{interfaceName}\" static {newDns[0]}");
+                for (int i = 1; i < newDns.Length; i++)
+                {
+                    ExecuteNetshCommand($"interface ip add dns name=\"{interfaceName}\" {newDns[i]} index={i + 1}");
+                }
+            }
+        }
+
+        private void ExecuteNetshCommand(string arguments)
+        {
+            ProcessStartInfo psi = new ProcessStartInfo("netsh", arguments)
+            {
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            using (Process process = Process.Start(psi))
+            {
+                process.WaitForExit();
+                string output = process.StandardOutput.ReadToEnd();
+                Console.WriteLine(output);
+            }
+        }
+
+private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

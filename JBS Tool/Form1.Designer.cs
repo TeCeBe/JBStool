@@ -43,10 +43,10 @@ namespace JBS_Tool
             button1 = new System.Windows.Forms.Button();
             niniteMainList = new System.Windows.Forms.CheckedListBox();
             tabPage2 = new System.Windows.Forms.TabPage();
-            button7 = new System.Windows.Forms.Button();
+            btnSaveSettings = new System.Windows.Forms.Button();
             button6 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
-            checkBox2 = new System.Windows.Forms.CheckBox();
+            chkDhcp = new System.Windows.Forms.CheckBox();
             txtDns = new System.Windows.Forms.TextBox();
             label5 = new System.Windows.Forms.Label();
             txtGateway = new System.Windows.Forms.TextBox();
@@ -61,6 +61,7 @@ namespace JBS_Tool
             linkLabel3 = new System.Windows.Forms.LinkLabel();
             linkLabel4 = new System.Windows.Forms.LinkLabel();
             linkLabel5 = new System.Windows.Forms.LinkLabel();
+            MessageBox = new System.Windows.Forms.TextBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -106,7 +107,7 @@ namespace JBS_Tool
             tabPage1.Controls.Add(niniteGroupbox);
             tabPage1.Location = new System.Drawing.Point(4, 24);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             tabPage1.Size = new System.Drawing.Size(792, 399);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Start";
@@ -210,15 +211,16 @@ namespace JBS_Tool
             niniteMainList.Items.AddRange(new object[] { "Google Chrome", "Mozilla Firefox", "Opera", "Microsoft Edge", "7-Zip", "VLC", "LibreOffice", "Foxit Reader" });
             niniteMainList.Location = new System.Drawing.Point(6, 22);
             niniteMainList.Name = "niniteMainList";
-            niniteMainList.Size = new System.Drawing.Size(251, 292);
+            niniteMainList.Size = new System.Drawing.Size(251, 274);
             niniteMainList.TabIndex = 0;
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(button7);
+            tabPage2.Controls.Add(MessageBox);
+            tabPage2.Controls.Add(btnSaveSettings);
             tabPage2.Controls.Add(button6);
             tabPage2.Controls.Add(button5);
-            tabPage2.Controls.Add(checkBox2);
+            tabPage2.Controls.Add(chkDhcp);
             tabPage2.Controls.Add(txtDns);
             tabPage2.Controls.Add(label5);
             tabPage2.Controls.Add(txtGateway);
@@ -231,21 +233,21 @@ namespace JBS_Tool
             tabPage2.Controls.Add(lbInterfaces);
             tabPage2.Location = new System.Drawing.Point(4, 24);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             tabPage2.Size = new System.Drawing.Size(792, 399);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Sieć";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnSaveSettings
             // 
-            button7.Location = new System.Drawing.Point(687, 359);
-            button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(75, 23);
-            button7.TabIndex = 15;
-            button7.Text = "Zapisz";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
+            btnSaveSettings.Location = new System.Drawing.Point(687, 359);
+            btnSaveSettings.Name = "btnSaveSettings";
+            btnSaveSettings.Size = new System.Drawing.Size(75, 23);
+            btnSaveSettings.TabIndex = 15;
+            btnSaveSettings.Text = "Zapisz";
+            btnSaveSettings.UseVisualStyleBackColor = true;
+            btnSaveSettings.Click += button7_Click;
             // 
             // button6
             // 
@@ -265,15 +267,15 @@ namespace JBS_Tool
             button5.Text = "Wyłącz DHCP i ustaw statyczny";
             button5.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkDhcp
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new System.Drawing.Point(273, 326);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new System.Drawing.Size(58, 19);
-            checkBox2.TabIndex = 12;
-            checkBox2.Text = "DHCP";
-            checkBox2.UseVisualStyleBackColor = true;
+            chkDhcp.AutoSize = true;
+            chkDhcp.Location = new System.Drawing.Point(273, 326);
+            chkDhcp.Name = "chkDhcp";
+            chkDhcp.Size = new System.Drawing.Size(58, 19);
+            chkDhcp.TabIndex = 12;
+            chkDhcp.Text = "DHCP";
+            chkDhcp.UseVisualStyleBackColor = true;
             // 
             // txtDns
             // 
@@ -405,6 +407,13 @@ namespace JBS_Tool
             linkLabel5.Text = "Klient";
             linkLabel5.LinkClicked += linkLabel5_LinkClicked;
             // 
+            // MessageBox
+            // 
+            MessageBox.Location = new System.Drawing.Point(370, 322);
+            MessageBox.Name = "MessageBox";
+            MessageBox.Size = new System.Drawing.Size(392, 23);
+            MessageBox.TabIndex = 16;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -451,10 +460,10 @@ namespace JBS_Tool
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.CheckBox autorunNinite;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnSaveSettings;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkDhcp;
         private System.Windows.Forms.TextBox txtDns;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtGateway;
@@ -466,6 +475,7 @@ namespace JBS_Tool
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.LinkLabel linkLabel5;
+        private System.Windows.Forms.TextBox MessageBox;
     }
 }
 

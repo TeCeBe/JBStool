@@ -51,6 +51,7 @@ namespace JBS_Tool
          * wazne: przy teście połączenia musi pokazac sie okienko test, ktore potwierdzi poprawne polaczenie
          * zawiera juz implementację autozamykania i nie trzeba przy nic robić nic więcej
          * have fun :)
+         * test
          */
     }
 }

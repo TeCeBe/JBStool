@@ -6,4 +6,6 @@ build_property.ApplicationHighDpiMode =
 build_property.ApplicationUseCompatibleTextRendering = 
 build_property.ApplicationVisualStyles = 
 build_property.RootNamespace = JBS_Tool
-build_property.ProjectDir = C:\Users\Lenovo\source\repos\JBStool\JBS Tool\
+build_property.ProjectDir = C:\Users\irekp\source\repos\JBStool\JBS Tool\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

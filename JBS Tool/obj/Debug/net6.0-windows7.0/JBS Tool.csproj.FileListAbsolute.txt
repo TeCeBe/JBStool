@@ -25,3 +25,29 @@ C:\Users\irekp\Source\Repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\refint\
 C:\Users\irekp\Source\Repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.pdb
 C:\Users\irekp\Source\Repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.genruntimeconfig.cache
 C:\Users\irekp\Source\Repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\ref\JBS Tool.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\net6.0-windows7.0\JBS Tool.exe
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\net6.0-windows7.0\JBS Tool.deps.json
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\net6.0-windows7.0\JBS Tool.runtimeconfig.json
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\net6.0-windows7.0\JBS Tool.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\net6.0-windows7.0\JBS Tool.pdb
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\net6.0-windows7.0\System.CodeDom.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\net6.0-windows7.0\System.Management.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\bin\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS_Tool.about.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS_Tool.clientMode.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS_Tool.downloadWindow.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS_Tool.Form1.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS_Tool.serverMode.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS_Tool.test.resources
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\refint\JBS Tool.dll
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.pdb
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\JBS Tool.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\JBStool\JBS Tool\obj\Debug\net6.0-windows7.0\ref\JBS Tool.dll

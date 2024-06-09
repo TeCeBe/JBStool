@@ -43,6 +43,7 @@ namespace JBS_Tool
             button1 = new System.Windows.Forms.Button();
             niniteMainList = new System.Windows.Forms.CheckedListBox();
             tabPage2 = new System.Windows.Forms.TabPage();
+            log = new System.Windows.Forms.TextBox();
             btnSaveSettings = new System.Windows.Forms.Button();
             button6 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
@@ -61,7 +62,7 @@ namespace JBS_Tool
             linkLabel3 = new System.Windows.Forms.LinkLabel();
             linkLabel4 = new System.Windows.Forms.LinkLabel();
             linkLabel5 = new System.Windows.Forms.LinkLabel();
-            MessageBox = new System.Windows.Forms.TextBox();
+            label6 = new System.Windows.Forms.Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -97,7 +98,7 @@ namespace JBS_Tool
             tabControl1.Location = new System.Drawing.Point(0, 27);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new System.Drawing.Size(800, 427);
+            tabControl1.Size = new System.Drawing.Size(800, 579);
             tabControl1.TabIndex = 3;
             tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             // 
@@ -107,7 +108,7 @@ namespace JBS_Tool
             tabPage1.Controls.Add(niniteGroupbox);
             tabPage1.Location = new System.Drawing.Point(4, 24);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            tabPage1.Padding = new System.Windows.Forms.Padding(3);
             tabPage1.Size = new System.Drawing.Size(792, 399);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Start";
@@ -216,7 +217,8 @@ namespace JBS_Tool
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(MessageBox);
+            tabPage2.Controls.Add(label6);
+            tabPage2.Controls.Add(log);
             tabPage2.Controls.Add(btnSaveSettings);
             tabPage2.Controls.Add(button6);
             tabPage2.Controls.Add(button5);
@@ -233,15 +235,25 @@ namespace JBS_Tool
             tabPage2.Controls.Add(lbInterfaces);
             tabPage2.Location = new System.Drawing.Point(4, 24);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            tabPage2.Size = new System.Drawing.Size(792, 399);
+            tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            tabPage2.Size = new System.Drawing.Size(792, 551);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Sieć";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // log
+            // 
+            log.Location = new System.Drawing.Point(273, 321);
+            log.Multiline = true;
+            log.Name = "log";
+            log.ReadOnly = true;
+            log.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            log.Size = new System.Drawing.Size(511, 224);
+            log.TabIndex = 16;
+            // 
             // btnSaveSettings
             // 
-            btnSaveSettings.Location = new System.Drawing.Point(687, 359);
+            btnSaveSettings.Location = new System.Drawing.Point(687, 277);
             btnSaveSettings.Name = "btnSaveSettings";
             btnSaveSettings.Size = new System.Drawing.Size(75, 23);
             btnSaveSettings.TabIndex = 15;
@@ -251,7 +263,7 @@ namespace JBS_Tool
             // 
             // button6
             // 
-            button6.Location = new System.Drawing.Point(463, 359);
+            button6.Location = new System.Drawing.Point(463, 277);
             button6.Name = "button6";
             button6.Size = new System.Drawing.Size(218, 23);
             button6.TabIndex = 14;
@@ -260,7 +272,7 @@ namespace JBS_Tool
             // 
             // button5
             // 
-            button5.Location = new System.Drawing.Point(273, 359);
+            button5.Location = new System.Drawing.Point(273, 277);
             button5.Name = "button5";
             button5.Size = new System.Drawing.Size(184, 23);
             button5.TabIndex = 13;
@@ -270,7 +282,7 @@ namespace JBS_Tool
             // chkDhcp
             // 
             chkDhcp.AutoSize = true;
-            chkDhcp.Location = new System.Drawing.Point(273, 326);
+            chkDhcp.Location = new System.Drawing.Point(273, 252);
             chkDhcp.Name = "chkDhcp";
             chkDhcp.Size = new System.Drawing.Size(58, 19);
             chkDhcp.TabIndex = 12;
@@ -279,7 +291,7 @@ namespace JBS_Tool
             // 
             // txtDns
             // 
-            txtDns.Location = new System.Drawing.Point(273, 253);
+            txtDns.Location = new System.Drawing.Point(273, 223);
             txtDns.Name = "txtDns";
             txtDns.Size = new System.Drawing.Size(312, 23);
             txtDns.TabIndex = 9;
@@ -287,7 +299,7 @@ namespace JBS_Tool
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(273, 235);
+            label5.Location = new System.Drawing.Point(273, 205);
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(30, 15);
             label5.TabIndex = 8;
@@ -358,7 +370,7 @@ namespace JBS_Tool
             lbInterfaces.ItemHeight = 15;
             lbInterfaces.Location = new System.Drawing.Point(3, 3);
             lbInterfaces.Name = "lbInterfaces";
-            lbInterfaces.Size = new System.Drawing.Size(264, 379);
+            lbInterfaces.Size = new System.Drawing.Size(264, 544);
             lbInterfaces.TabIndex = 0;
             lbInterfaces.SelectedIndexChanged += lbInterfaces_SelectedIndexChanged;
             // 
@@ -407,18 +419,20 @@ namespace JBS_Tool
             linkLabel5.Text = "Klient";
             linkLabel5.LinkClicked += linkLabel5_LinkClicked;
             // 
-            // MessageBox
+            // label6
             // 
-            MessageBox.Location = new System.Drawing.Point(370, 322);
-            MessageBox.Name = "MessageBox";
-            MessageBox.Size = new System.Drawing.Size(392, 23);
-            MessageBox.TabIndex = 16;
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(276, 303);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(33, 15);
+            label6.TabIndex = 17;
+            label6.Text = "Logi:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 456);
+            ClientSize = new System.Drawing.Size(800, 608);
             Controls.Add(linkLabel5);
             Controls.Add(linkLabel4);
             Controls.Add(linkLabel3);
@@ -475,7 +489,8 @@ namespace JBS_Tool
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.TextBox MessageBox;
+        private System.Windows.Forms.TextBox log;
+        private System.Windows.Forms.Label label6;
     }
 }
 

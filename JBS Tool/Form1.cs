@@ -293,7 +293,11 @@ namespace JBS_Tool
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            if (lbInterfaces.SelectedItem != null)
+            {
+                string interfaceName = lbInterfaces.SelectedItem.ToString();
+                UpdateIPv4Settings(interfaceName, chkDhcp.Checked, txtIpAddress.Text, txtSubnetMask.Text, txtGateway.Text, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
+            }
         }
 
         private void loadInterfaces()
@@ -348,11 +352,7 @@ namespace JBS_Tool
 
         private void btnSaveSettings_Click(object sender, EventArgs e)
         {
-            if (lbInterfaces.SelectedItem != null)
-            {
-                string interfaceName = lbInterfaces.SelectedItem.ToString();
-                UpdateIPv4Settings(interfaceName, chkDhcp.Checked, txtIpAddress.Text, txtSubnetMask.Text, txtGateway.Text, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
-            }
+
         }
 
         private void btnDisableDhcp_Click(object sender, EventArgs e)
@@ -420,24 +420,37 @@ namespace JBS_Tool
             }
         }
 
-        private void ExecuteNetshCommand(string arguments)
+        private void ExecuteNetshCommand(string command)
         {
-            ProcessStartInfo psi = new ProcessStartInfo("netsh", arguments)
+            try
             {
-                RedirectStandardOutput = true,
-                UseShellExecute = false,
-                CreateNoWindow = true
-            };
+                ProcessStartInfo processInfo = new ProcessStartInfo("netsh", command);
+                processInfo.RedirectStandardError = true;
+                processInfo.RedirectStandardOutput = true;
+                processInfo.UseShellExecute = false;
+                processInfo.CreateNoWindow = true;
 
-            using (Process process = Process.Start(psi))
-            {
-                process.WaitForExit();
+                Process process = new Process();
+                process.StartInfo = processInfo;
+                process.Start();
+
                 string output = process.StandardOutput.ReadToEnd();
-                Console.WriteLine(output);
+                string error = process.StandardError.ReadToEnd();
+
+                process.WaitForExit();
+
+                // Log the output and error
+                log.Text += ($"Komenda: {command}") + Environment.NewLine;
+                log.Text += ($"Odpowiedź: {output}") + Environment.NewLine;
+                log.Text += ($"Błąd: {error}") + Environment.NewLine;
+            }
+            catch (Exception ex)
+            {
+                log.Text += ($"Wyjątek: {ex.Message}") + Environment.NewLine;
             }
         }
 
-private void textBox2_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -1,15 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lM5/rfLEh39ID15e/460U0RBPMgpZuUy1oh/k/9xz4GTORBiVBwrfEbiVgNPwQjvVljcQayC2WkTxgMUzXqVIQ==",
+  "dgSpecHash": "IKUqiK+pS41+3d++jV33f4KGGSfejF3Wy8XlL6cVNW3nUSSgDRN9vR9zoEUQ0yFVC1CEeTOtZUMLuTwNFfqZsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\irekp\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
-    "C:\\Users\\irekp\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
-    "C:\\Users\\irekp\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\irekp\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\irekp\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\irekp\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

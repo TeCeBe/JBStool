@@ -343,6 +343,7 @@ namespace JBS_Tool
                                                        .Where(dns => dns.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
                                                        .Select(dns => dns.ToString()).ToArray();
                     txtDns.Text = string.Join(", ", dnsAddresses);
+                    label1.Text = networkInterface.Name;
                 }
 
                 // Check DHCP status
@@ -357,22 +358,12 @@ namespace JBS_Tool
 
         private void btnDisableDhcp_Click(object sender, EventArgs e)
         {
-            if (lbInterfaces.SelectedItem != null)
-            {
-                string interfaceName = lbInterfaces.SelectedItem.ToString();
-                SaveCurrentIPv4Settings(interfaceName);
-                UpdateIPv4Settings(interfaceName, false, txtIpAddress.Text, txtSubnetMask.Text, txtGateway.Text, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
-            }
+
         }
 
         private void btnDisableDhcpAndRemoveGateway_Click(object sender, EventArgs e)
         {
-            if (lbInterfaces.SelectedItem != null)
-            {
-                string interfaceName = lbInterfaces.SelectedItem.ToString();
-                SaveCurrentIPv4Settings(interfaceName);
-                UpdateIPv4Settings(interfaceName, false, txtIpAddress.Text, txtSubnetMask.Text, string.Empty, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
-            }
+            
         }
 
         private void SaveCurrentIPv4Settings(string interfaceName)
@@ -453,6 +444,26 @@ namespace JBS_Tool
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (lbInterfaces.SelectedItem != null)
+            {
+                string interfaceName = lbInterfaces.SelectedItem.ToString();
+                SaveCurrentIPv4Settings(interfaceName);
+                UpdateIPv4Settings(interfaceName, false, txtIpAddress.Text, txtSubnetMask.Text, string.Empty, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (lbInterfaces.SelectedItem != null)
+            {
+                string interfaceName = lbInterfaces.SelectedItem.ToString();
+                SaveCurrentIPv4Settings(interfaceName);
+                UpdateIPv4Settings(interfaceName, false, txtIpAddress.Text, txtSubnetMask.Text, txtGateway.Text, txtDns.Text.Split(',').Select(dns => dns.Trim()).ToArray());
+            }
         }
     }
 }

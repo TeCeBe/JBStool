@@ -43,6 +43,7 @@ namespace JBS_Tool
             button1 = new System.Windows.Forms.Button();
             niniteMainList = new System.Windows.Forms.CheckedListBox();
             tabPage2 = new System.Windows.Forms.TabPage();
+            label6 = new System.Windows.Forms.Label();
             log = new System.Windows.Forms.TextBox();
             btnSaveSettings = new System.Windows.Forms.Button();
             button6 = new System.Windows.Forms.Button();
@@ -62,7 +63,6 @@ namespace JBS_Tool
             linkLabel3 = new System.Windows.Forms.LinkLabel();
             linkLabel4 = new System.Windows.Forms.LinkLabel();
             linkLabel5 = new System.Windows.Forms.LinkLabel();
-            label6 = new System.Windows.Forms.Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -109,7 +109,7 @@ namespace JBS_Tool
             tabPage1.Location = new System.Drawing.Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            tabPage1.Size = new System.Drawing.Size(792, 399);
+            tabPage1.Size = new System.Drawing.Size(792, 551);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Start";
             tabPage1.UseVisualStyleBackColor = true;
@@ -241,6 +241,15 @@ namespace JBS_Tool
             tabPage2.Text = "Sieć";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(276, 303);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(33, 15);
+            label6.TabIndex = 17;
+            label6.Text = "Logi:";
+            // 
             // log
             // 
             log.Location = new System.Drawing.Point(273, 321);
@@ -269,6 +278,7 @@ namespace JBS_Tool
             button6.TabIndex = 14;
             button6.Text = "Statyczny bez komunikacji (EGZAMIN)";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
@@ -278,6 +288,7 @@ namespace JBS_Tool
             button5.TabIndex = 13;
             button5.Text = "Wyłącz DHCP i ustaw statyczny";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // chkDhcp
             // 
@@ -418,15 +429,6 @@ namespace JBS_Tool
             linkLabel5.TabStop = true;
             linkLabel5.Text = "Klient";
             linkLabel5.LinkClicked += linkLabel5_LinkClicked;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(276, 303);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(33, 15);
-            label6.TabIndex = 17;
-            label6.Text = "Logi:";
             // 
             // Form1
             // 

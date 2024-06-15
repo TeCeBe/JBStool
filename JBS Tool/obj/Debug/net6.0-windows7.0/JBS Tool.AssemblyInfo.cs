@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JBS Tool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0794c556f673d3c0cdff5b5b294edccca6bcb74")]
 [assembly: System.Reflection.AssemblyProductAttribute("JBS Tool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JBS Tool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

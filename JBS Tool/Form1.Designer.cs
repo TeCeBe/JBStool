@@ -424,10 +424,10 @@ namespace JBS_Tool
             linkLabel5.AutoSize = true;
             linkLabel5.Location = new System.Drawing.Point(510, 9);
             linkLabel5.Name = "linkLabel5";
-            linkLabel5.Size = new System.Drawing.Size(37, 15);
+            linkLabel5.Size = new System.Drawing.Size(12, 15);
             linkLabel5.TabIndex = 7;
             linkLabel5.TabStop = true;
-            linkLabel5.Text = "Klient";
+            linkLabel5.Text = "/";
             linkLabel5.LinkClicked += linkLabel5_LinkClicked;
             // 
             // Form1

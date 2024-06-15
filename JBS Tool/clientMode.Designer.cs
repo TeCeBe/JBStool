@@ -75,6 +75,7 @@ namespace JBS_Tool
             ipBox.Name = "ipBox";
             ipBox.Size = new System.Drawing.Size(347, 23);
             ipBox.TabIndex = 3;
+            ipBox.TextChanged += ipBox_TextChanged;
             // 
             // label2
             // 

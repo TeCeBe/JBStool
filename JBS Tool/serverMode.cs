@@ -20,10 +20,99 @@ namespace JBS_Tool
         {
             InitializeComponent();
             server = new TcpListener(IPAddress.Any, 25064);
+            ToggleServerControls(false);
+        }
+
+        private void ToggleServerControls(bool isEnabled)
+        {
+            stopServerButton.Enabled = isEnabled;
+            actionBox.Enabled = isEnabled;
+            runServerButton.Enabled = !isEnabled;
+        }
+
+        private async void button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                server.Start();
+                ToggleServerControls(true);
+                addLog("Serwer uruchomiony na porcie 25064.");
+                isServerRunning = true;
+                cancellationTokenSource = new CancellationTokenSource();
+                await AcceptClients();
+            }
+            catch (Exception exc)
+            {
+                ToggleServerControls(false);
+                addLog("Wystąpił błąd podczas uruchamiania serwera. Szczegóły: " + exc);
+                MessageBox.Show("Wystąpił błąd podczas uruchamiania serwera. Szczegóły: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async Task AcceptClients()
+        {
+            while (isServerRunning)
+            {
+                try
+                {
+                    TcpClient client = await server.AcceptTcpClientAsync();
+                    clients.Add(client);
+                }
+                catch (ObjectDisposedException)
+                {
+                    // Ignored during server shutdown
+                }
+                catch (Exception exc)
+                {
+                    addLog("Błąd przy przyjmowaniu nowego klienta: " + exc.Message);
+                    MessageBox.Show("Błąd podczas przyjmowania nowego klienta: " + exc.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            StopServer();
+        }
+
+        private void StopServer()
+        {
+            try
+            {
+                isServerRunning = false;
+                cancellationTokenSource?.Cancel();
+                server.Stop();
+                foreach (var client in clients)
+                {
+                    client.Close();
+                }
+                clients.Clear();
+                addLog("Serwer zatrzymany.");
+                ToggleServerControls(false);
+            }
+            catch (Exception exc)
+            {
+                addLog("Wystąpił błąd podczas zatrzymywania serwera. Szczegóły: " + exc);
+                MessageBox.Show("Wystąpił błąd podczas zatrzymywania serwera. Szczegóły: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void addLog(String message)
+        {
+            logTextBox.Invoke((MethodInvoker)delegate
+            {
+                logTextBox.Text += "[" + DateTime.Now + "] " + message + Environment.NewLine;
+            });
         }
 
         private async void sendMessage(String message)
         {
+            if (!isServerRunning || clients.Count == 0)
+            {
+                MessageBox.Show("Brak aktywnego serwera lub klientów.", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             try
             {
                 foreach (TcpClient client in clients)
@@ -40,95 +129,9 @@ namespace JBS_Tool
             }
         }
 
-        private void addLog(String message)
+        private void serverMode_Load(object sender, EventArgs e)
         {
-            logTextBox.Text += "[" + DateTime.Now + "] " + message + Environment.NewLine;
-        }
-
-        private async void button11_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                server.Start();
-                runServerButton.Enabled = false;
-                stopServerButton.Enabled = true;
-                actionBox.Enabled = true;
-                addLog("Serwer uruchomiony na porcie 25064.");
-                isServerRunning = true;
-                cancellationTokenSource = new CancellationTokenSource();
-
-                while (isServerRunning)
-                {
-                    try
-                    {
-                        var acceptTask = server.AcceptTcpClientAsync();
-                        var completedTask = await Task.WhenAny(acceptTask, Task.Delay(Timeout.Infinite, cancellationTokenSource.Token));
-
-                        if (completedTask == acceptTask)
-                        {
-                            TcpClient client = acceptTask.Result;
-                            clients.Add(client);
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    }
-                    catch (ObjectDisposedException)
-                    {
-                        break;
-                    }
-                }
-            }
-            catch (Exception exc)
-            {
-                isServerRunning = false;
-                runServerButton.Enabled = true;
-                stopServerButton.Enabled = false;
-                actionBox.Enabled = false;
-                addLog("Wystąpił błąd podczas uruchamiania serwera. Szczegóły: " + exc);
-                MessageBox.Show("Wystąpił błąd podczas uruchamiania serwera. Szczegóły: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void stopServerButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                isServerRunning = false;
-                cancellationTokenSource?.Cancel();
-                server.Stop();
-                foreach (var client in clients)
-                {
-                    client.Close();
-                }
-                clients.Clear();
-                addLog("Serwer zatrzymany.");
-                runServerButton.Enabled = true;
-                stopServerButton.Enabled = false;
-                actionBox.Enabled = false;
-            }
-            catch (Exception exc)
-            {
-                addLog("Wystąpił błąd podczas zatrzymywania serwera. Szczegóły: " + exc);
-                MessageBox.Show("Wystąpił błąd podczas zatrzymywania serwera. Szczegóły: " + exc, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            sendMessage("command");
-            sendMessage(commandTextBox.Text);
-            addLog("Wysłano komendę: " + commandTextBox.Text);
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            isServerRunning = false;
-            server.Stop();
-            runServerButton.Enabled = true;
-            stopServerButton.Enabled = false;
-            actionBox.Enabled = false;
+            ipTextBox.Text = GetLocalIPAddress();
         }
 
         private static string GetLocalIPAddress()
@@ -144,9 +147,49 @@ namespace JBS_Tool
             throw new Exception("Brak lokalnego adresu IPv4 w interfejsie sieciowym.");
         }
 
-        private void serverMode_Load(object sender, EventArgs e)
+        // Dodane metody obsługi zdarzeń (handler methods)
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ipTextBox.Text = GetLocalIPAddress();
+            MessageBox.Show("Informacje o funkcjach...", "Pomoc", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void dhcpButton_Click(object sender, EventArgs e)
+        {
+            sendMessage("dhcp");
+            addLog("Wysłano komendę: Włącz DHCP.");
+        }
+
+        private void staticNoGwButton_Click(object sender, EventArgs e)
+        {
+            sendMessage("no_dhcp_gateway");
+            addLog("Wysłano komendę: Ustaw statyczny adres bez bramy domyślnej.");
+        }
+
+        private void staticButton_Click(object sender, EventArgs e)
+        {
+            sendMessage("no_dhcp");
+            addLog("Wysłano komendę: Wyłącz DHCP i ustaw statyczny adres.");
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            bool isChecked = checkBox1.Checked;
+            shutdownButton.Enabled = isChecked;
+            staticButton.Enabled = isChecked;
+            staticNoGwButton.Enabled = isChecked;
+            dhcpButton.Enabled = isChecked;
+        }
+
+        private void shutdownButton_Click(object sender, EventArgs e)
+        {
+            sendMessage("shutdown");
+            addLog("Wysłano komendę: Wyłączenie komputera.");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            sendMessage(commandTextBox.Text);
+            addLog("Wysłano polecenie: " + commandTextBox.Text);
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -155,75 +198,21 @@ namespace JBS_Tool
             addLog("Wysłano test połączenia.");
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            sendMessage("uri");
-            sendMessage(uriTextBox.Text);
-            addLog("Wysłano URI: " + uriTextBox.Text);
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             sendMessage("close_browser");
             addLog("Zamknięto przeglądarkę.");
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            sendMessage("open_browser " + uriTextBox.Text);
+            addLog("Wysłano URI: " + uriTextBox.Text);
+        }
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show("Aby korzystać z trybu serwera, uruchom go na komputerze, który ma być zdalnie sterowany. Następnie uruchom tryb klienta na komputerze, z którego chcesz sterować zdalnie. Wpisz adres IP komputera, na którym uruchomiono serwer, a następnie kliknij przycisk 'Połącz'.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            MessageBox.Show("Wyślij komendę wyłączenia komputera: wyłącza komputer zdalny. Używać ostrożnie." + Environment.NewLine + "Wyłącz DHCP i ustaw statyczny adres: wyłącza DHCP i ustawia adresację według DHCP, lecz zapisuje ją statycznie" + Environment.NewLine + "Ustaw statyczny adres bez komunikacji: wyłącza DHCP i ustawia adresację według DHCP, lecz zapisuje ją statycznie pomijając konfigurację bramy domyślnej" + Environment.NewLine + "Włącz DHCP: włącza DHCP" + Environment.NewLine + "Wszystkie akcje powyżej odbywają się na wszystkich interfejsach.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
-            {
-                MessageBox.Show("Uwaga! Akcje wykonają się na wszystkich komputerach. Używaj rozważnie!", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                shutdownButton.Enabled = true;
-                staticButton.Enabled = true;
-                staticNoGwButton.Enabled = true;
-                dhcpButton.Enabled = true;
-            }
-            else
-            {
-                shutdownButton.Enabled = false;
-                staticButton.Enabled = false;
-                staticNoGwButton.Enabled = false;
-                dhcpButton.Enabled = false;
-            }
-        }
-
-        private void shutdownButton_Click(object sender, EventArgs e)
-        {
-            sendMessage("shutdown");
-            addLog("Wyłączono komputer.");
-        }
-
-        private void staticButton_Click(object sender, EventArgs e)
-        {
-            sendMessage("no_dhcp");
-            addLog("Ustawiono statycznie adresację.");
-        }
-
-        private void staticNoGwButton_Click(object sender, EventArgs e)
-        {
-            sendMessage("no_dhcp_gateway");
-            addLog("Ustawiono statycznie adresację bez bramy domyślnej.");
-        }
-
-        private void dhcpButton_Click(object sender, EventArgs e)
-        {
-            sendMessage("dhcp");
-            addLog("Włączono DHCP.");
+            MessageBox.Show("Informacje o trybie serwera...", "Pomoc", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

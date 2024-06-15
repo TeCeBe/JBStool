@@ -8,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Management;
+using System.Net;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
@@ -395,6 +396,21 @@ namespace JBS_Tool
 
         private void UpdateIPv4Settings(string interfaceName, bool useDhcp, string newIp, string newSubnet, string newGateway, string[] newDns)
         {
+            if (!ValidateIpAddress(newIp) || !ValidateIpAddress(newSubnet) || (!string.IsNullOrEmpty(newGateway) && !ValidateIpAddress(newGateway)))
+            {
+                log.Text += "Nieprawidłowy adres IP, maska podsieci lub brama." + Environment.NewLine;
+                return;
+            }
+
+            foreach (string dns in newDns)
+            {
+                if (!ValidateIpAddress(dns))
+                {
+                    log.Text += "Nieprawidłowy adres DNS: " + dns + Environment.NewLine;
+                    return;
+                }
+            }
+
             if (useDhcp)
             {
                 ExecuteNetshCommand($"interface ip set address \"{interfaceName}\" dhcp");
@@ -409,6 +425,10 @@ namespace JBS_Tool
                     ExecuteNetshCommand($"interface ip add dns name=\"{interfaceName}\" {newDns[i]} index={i + 1}");
                 }
             }
+        }
+        private bool ValidateIpAddress(string ipAddress)
+        {
+            return IPAddress.TryParse(ipAddress, out _);
         }
 
         private void ExecuteNetshCommand(string command)
@@ -434,6 +454,11 @@ namespace JBS_Tool
                 log.Text += ($"Komenda: {command}") + Environment.NewLine;
                 log.Text += ($"Odpowiedź: {output}") + Environment.NewLine;
                 log.Text += ($"Błąd: {error}") + Environment.NewLine;
+
+                if (!string.IsNullOrEmpty(error))
+                {
+                    throw new Exception(error);
+                }
             }
             catch (Exception ex)
             {

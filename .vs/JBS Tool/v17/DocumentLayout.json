@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\irekp\\source\\repos\\JBStool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\clientmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\clientmode.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,7 +11,27 @@
       "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\servermode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|c:\\users\\irekp\\source\\repos\\jbstool\\jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\clientmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\servermode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\clientmode.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\clientmode.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|C:\\Users\\irekp\\source\\repos\\JBStool\\jbs tool\\servermode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB833381-EBEC-471A-956D-BB40AD25FCF1}|JBS Tool\\JBS Tool.csproj|solutionrelative:jbs tool\\servermode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,32 +66,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "clientMode.cs",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
               "RelativeDocumentMoniker": "JBS Tool\\clientMode.cs",
               "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
               "RelativeToolTip": "JBS Tool\\clientMode.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADMAAAAAAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAmwGwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T11:37:54.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "clientMode.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs",
               "RelativeDocumentMoniker": "JBS Tool\\clientMode.cs",
               "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.cs [Projekt]",
               "RelativeToolTip": "JBS Tool\\clientMode.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T11:37:50.719Z",
-              "EditorCaption": " [Projekt]"
+              "WhenOpened": "2024-06-15T11:37:50.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "clientMode.Designer.cs",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.Designer.cs",
               "RelativeDocumentMoniker": "JBS Tool\\clientMode.Designer.cs",
@@ -99,20 +98,18 @@
               "RelativeToolTip": "JBS Tool\\clientMode.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T11:33:01.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T11:33:01.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "clientMode.resx",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.resx",
               "RelativeDocumentMoniker": "JBS Tool\\clientMode.resx",
               "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\clientMode.resx",
               "RelativeToolTip": "JBS Tool\\clientMode.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-15T11:32:43.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T11:32:43.022Z"
             },
             {
               "$type": "Document",
@@ -124,12 +121,11 @@
               "RelativeToolTip": "JBS Tool\\serverMode.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAALAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T11:24:10.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T11:24:10.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "serverMode.cs",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs",
               "RelativeDocumentMoniker": "JBS Tool\\serverMode.cs",
@@ -137,8 +133,7 @@
               "RelativeToolTip": "JBS Tool\\serverMode.cs",
               "ViewState": "AQIAANoAAAAAAAAAAAAAAN0AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T11:18:30.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T11:18:30.086Z"
             },
             {
               "$type": "Document",
@@ -149,18 +144,17 @@
               "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\serverMode.cs [Projekt]",
               "RelativeToolTip": "JBS Tool\\serverMode.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T11:18:13.236Z",
-              "EditorCaption": " [Projekt]"
+              "WhenOpened": "2024-06-15T11:18:13.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\Form1.cs",
               "RelativeDocumentMoniker": "JBS Tool\\Form1.cs",
               "ToolTip": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\Form1.cs",
               "RelativeToolTip": "JBS Tool\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0BAAAMAAAA",
+              "ViewState": "AQIAAMwBAAAAAAAAAAAAAO0BAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T11:08:11.752Z",
               "EditorCaption": ""
@@ -178,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\Form1.cs",
               "RelativeDocumentMoniker": "JBS Tool\\Form1.cs",

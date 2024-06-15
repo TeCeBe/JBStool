@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {}
+    "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {
+    "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+        "projectUniqueName": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
         "projectName": "JBS Tool",
-        "projectPath": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+        "projectPath": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
         "packagesPath": "C:\\Users\\irekp\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\obj\\",
         "projectStyle": "PackageReference",

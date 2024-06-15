@@ -58,7 +58,11 @@ namespace JBS_Tool
                 richTextBox1.AppendText("Otrzymano: " + message + "\n");
             });
 
-            switch (message)
+            string[] commandParts = message.Split(new[] { ' ' }, 2);  // Rozdzielenie wiadomości na polecenie i argumenty
+            string command = commandParts[0];
+            string argument = commandParts.Length > 1 ? commandParts[1] : "";
+
+            switch (command)
             {
                 case "connection_test":
                     MessageBox.Show("Test połączenia zakończony sukcesem", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -67,10 +71,13 @@ namespace JBS_Tool
                     ExecuteCommand("shutdown /s /t 0");
                     break;
                 case "open_browser":
-                    ExecuteCommand("start http://www.google.com");
+                    OpenBrowser(argument);
+                    break;
+                case "cmd":
+                    ExecuteCommand(argument);  // Wykonanie dowolnej komendy przesłanej przez serwer
                     break;
                 case "close_browser":
-                    ExecuteCommand("taskkill /IM chrome.exe /F"); // Assumes Chrome is the browser
+                    ExecuteCommand("taskkill /IM chrome.exe /F");  // Przykład dla Chrome, zmień na inny proces jeśli używasz innej przeglądarki
                     break;
                 case "dhcp":
                     ExecuteCommand("netsh interface ip set address \"Local Area Connection\" dhcp");
@@ -82,15 +89,24 @@ namespace JBS_Tool
                     ExecuteCommand("netsh interface ip set address \"Local Area Connection\" static 192.168.1.101 255.255.255.0 none");
                     break;
                 default:
-                    MessageBox.Show("Nieznana komenda: " + message, "Komunikat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nieznana komenda: " + command, "Komunikat", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     break;
+            }
+        }
+
+        private void OpenBrowser(string url)
+        {
+            if (!string.IsNullOrWhiteSpace(url))
+            {
+                Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
             }
         }
 
         private void ExecuteCommand(string command)
         {
-            Process.Start("cmd.exe", "/c " + command);
+            Process.Start(new ProcessStartInfo("cmd.exe", $"/c {command}") { CreateNoWindow = true });
         }
+
 
         private void UpdateStatus(string status)
         {

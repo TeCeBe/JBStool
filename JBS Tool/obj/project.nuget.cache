@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lM5/rfLEh39ID15e/460U0RBPMgpZuUy1oh/k/9xz4GTORBiVBwrfEbiVgNPwQjvVljcQayC2WkTxgMUzXqVIQ==",
+  "dgSpecHash": "sDqTi1yCEfelkC0StoVuvdFH99Y6L0eiErnA3WVnGTxjewE4ZsZqfnQhSCGvMD0ZqM0MtahxcgpsXcQTEer/wQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irekp\\Source\\Repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
+  "projectFilePath": "C:\\Users\\irekp\\source\\repos\\JBStool\\JBS Tool\\JBS Tool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irekp\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
     "C:\\Users\\irekp\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
